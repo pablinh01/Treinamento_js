@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeiro passo</title>
+</head>
+<style>
+    body {
+        background: blue;
+        color: white;
+        font: normal 18tp Arial;
+    }
+</style>
+
+<body>
+    <h1>Iniciando estudos Dom</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em Js</p>
+    <div name="msg">
+        clique em mim
+    </div>
+    <div name="msg">
+        clique em mim
+    </div>
+    h1*2
+    <script>
+        var d = window.document.getElementsByName("msg")[1]
+        // Colocamos o zero para chamar o primeiro paragrafo apenas
+        d.style.background = 'green'
+        d.innerText = 'Aguardando texto...'
+    </script>
+</body>
+
+</html>
