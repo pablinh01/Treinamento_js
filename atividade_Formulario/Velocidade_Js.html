@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+</head>
+
+<body>
+                <h1> Teste de Velocidade</h1>
+                <form>
+                                <input type="number" id="KmRodados">
+                                <div id="resposta"></div>
+                                <input type="button" value="Resultado" onclick="kms()">
+                </form>
+
+                <script>
+                                function kms() {
+                                                var Km = Number(document.getElementById("KmRodados").value);
+                                                var resukm = document.getElementById("resposta");
+
+                                                if (Km <= 60) {
+                                                                resukm.innerHTML = `prossiga`
+                                                                resukm.style.color = 'green';
+                                                } else if (Km == 80) {
+
+                                                                resukm.innerHTML = `Reduzir a velocidade`
+                                                                resukm.style.color = 'yellow';
+                                                }
+                                                else if (Km > 80){
+                                                               resukm.innerHTML = `Você foi multado`
+                                                               resukm.style.color = 'red';
+                                                }
+
+                                }
+
+                </script>
+</body>
+
+</html>

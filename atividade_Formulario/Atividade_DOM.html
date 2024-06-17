@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Atividade Dom</title>
+</head>
+<body>
+ <h1>Calculo de Média</h1>
+ <input type="number" id="num1">
+ <input type="number" id="num2">
+ <div id="media"></div>
+<input type="button" value="calcular" onclick="valor()">
+
+<script>
+function valor() {
+                var num1 = Number(document.getElementById("num1").value);
+                var num2 = Number(document.getElementById("num2").value);
+                var resu = document.getElementById("media");
+                var resultado = (num1 + num2) / 2;
+
+                if (resultado >= 7){
+                                resu.innerHTML =`Aprovado`
+                                resu.style.color = `green`;
+                }
+                else if (resultado < 7) {
+                                resu.innerHTML =`Reprovado`
+                                resu.style.color = `red`;
+                }
+}
+
+</script>
+                
+</body>
+</html>
